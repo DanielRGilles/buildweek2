@@ -8,6 +8,7 @@ Accept-Language: us-en\r`;
 
     expect(method).toEqual('GET');
   });
+
   it('returns the method from the raw request', () => {
     const rawRequest = `POST / HTTP/1.1\r
 Host: example.com\r
@@ -16,6 +17,7 @@ Accept-Language: us-en\r`;
 
     expect(method).toEqual('POST');
   });
+  
   it('returns the method from the raw request', () => {
     const rawRequest = `DELETE / HTTP/1.1\r
 Host: example.com\r
